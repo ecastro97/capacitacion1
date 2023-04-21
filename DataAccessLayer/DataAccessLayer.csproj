@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6888E86-85F4-458A-9FD3-A4C47430B41C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessLayer</RootNamespace>
+    <AssemblyName>DataAccessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntityModel\Actividad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Alerta.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Asignacion_Supervisor_Informe.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Bitacora_Errores.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Bitacora_Eventos.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Clase_Entidad_Auditora.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Clasificacion_Entidad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Codigo_Verificacion_Usuario.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Configuracion_Alerta.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Control.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Controlador_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Control_Contexto.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\C__EFMigrationsHistory.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Despacho_Correo_Alertas.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Dias_Feriados.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\EmailRequests.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\EmailTemplates.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\EmailTemplatesTypes.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Enlaces.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Enlace_Evidencia_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Entidad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Entidad_Auditora.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Entrevista_Informe_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\ErrorLogs.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Estado_Proceso.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Estado_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Estado_Usuario_Externo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Evento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Evidencia_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Flujo_Estado_Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Flujo_Estado_Informe_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Flujo_Estado_Plan_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Fuente_Financiera.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Geografico.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Grupo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Grupo_Bandeja.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Grupo_Evento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Hallazgo_Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Historico_Estado_Usuario_Externo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Informe_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Mensaje_Aplicativo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Mensaje_Correo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Menu.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Nivel_Organizacional.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Notificacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Observacion_Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Observacion_Informe_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Organigrama.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Organigrama_Entidad_Relacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Parametros.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Plan_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Portlet.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Portlet_Definicion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Presentacion_Evidencia.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Presentacion_Evidencia_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Presentacion_Plan_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Prioridad_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Recipients.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Recomendacion_Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Recomendacion_Plan_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Sector.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Seguimiento_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Adenda_Plan_Accion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Adenda_Plan_Accion_Actividad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Adenda_Plan_Accion_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Enrolamiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Enrolamiento_Detalle.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Evidencia.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Evidencia_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Solicitud_Prorroga.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\sysdiagrams.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Asignacion_Entidad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Auditoria_Informe_Auditoria.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Informe_Seguimiento.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Notificacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Tipo_Recomendacion.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\tsc_his_db_dev_entities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tsc_his_db_dev_entities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\tsc_his_db_dev_entities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\tsc_his_db_dev_entities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tsc_his_db_dev_entities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Usuario.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Usuario_Entidad.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Usuario_Grupo.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Usuario_Organigrama.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityModel\Ventana.cs">
+      <DependentUpon>tsc_his_db_dev_entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModeloExterno\DataAccount.cs" />
+    <Compile Include="ModeloExterno\DataMenuSidebar.cs" />
+    <Compile Include="Util\Auditoria\Auditoria.cs" />
+    <Compile Include="Util\Auditoria\Bitacora.cs" />
+    <Compile Include="Util\Database\ScriptSql.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\AssemblyInfo\AssemblyInfo.cs" />
+    <Compile Include="Util\Database\SqlServerProps.cs" />
+    <Compile Include="Util\Security\Security.cs" />
+    <Compile Include="Util\Util.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <EntityDeploy Include="EntityModel\tsc_his_db_dev_entities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>tsc_his_db_dev_entities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntityModel\tsc_his_db_dev_entities.edmx.diagram">
+      <DependentUpon>tsc_his_db_dev_entities.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EntityModel\tsc_his_db_dev_entities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tsc_his_db_dev_entities.edmx</DependentUpon>
+      <LastGenOutput>tsc_his_db_dev_entities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityModel\tsc_his_db_dev_entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tsc_his_db_dev_entities.edmx</DependentUpon>
+      <LastGenOutput>tsc_his_db_dev_entities.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataEntityLayer\DataEntityLayer.csproj">
+      <Project>{6E48932F-7ED4-4AC4-9923-204FFF0B6C09}</Project>
+      <Name>DataEntityLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

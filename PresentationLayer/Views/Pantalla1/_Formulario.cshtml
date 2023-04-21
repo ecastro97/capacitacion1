@@ -1,0 +1,61 @@
+﻿@using DataEntityLayer.Models.Pantalla1;
+
+<div class="row " style="padding: 10px;">
+    <div class="col-lg-12">
+        @(Html.DevExtreme().Form<Pantalla1Model>()
+        .ID("Formulario1")
+        .LabelLocation(FormLabelLocation.Left)
+        .LabelLocation(FormLabelLocation.Left)
+        .LabelMode(FormLabelMode.Outside)
+        .ScrollingEnabled(true)
+        .Items(items =>
+        {
+            items.AddGroup()
+            .Items(groupItems =>
+            {
+                groupItems.AddSimpleFor(m => m.Nombre).Editor(E => E.TextBox().Name("Nombre").ID("Nombre").MaxLength(50)).IsRequired(true).ColSpan(1);
+                groupItems.AddSimpleFor(m => m.Apellido).Editor(E => E.TextBox().Name("Apellido").ID("Apellido").MaxLength(50)).IsRequired(true).ColSpan(1);
+            }).ColCountByScreen(cs => cs.Md(2).Lg(2).Sm(1)).ColCount(2).ColSpan(1);
+
+            items.AddGroup()
+            .Items(groupItems =>
+            {
+                groupItems.AddSimpleFor(m => m.Edad).Editor(e => e.TextBox().Name("Edad").ID("Edad")).IsRequired(false).ColSpan(1);
+                groupItems.AddSimpleFor(m => m.Identidad).Editor(e => e.TextBox().Name("Identidad").ID("Identidad")).ColSpan(1);
+                groupItems.AddSimpleFor(m => m.Conyuge).Editor(e => e.TextBox().Name("Conyuge").ID("Conyuge")).ColSpan(1);
+            }).ColCountByScreen(cs => cs.Md(2).Lg(2).Sm(1)).ColCount(2).ColSpan(1);
+
+            items.AddGroup()
+            .Items(groupItems =>
+            {
+                groupItems.AddSimpleFor(m => m.Fecha_Inicial).Editor(e => e.DateBox().Type(DateBoxType.Date).DisplayFormat("dd/MM/yyyy")
+                .Name("Fecha_Inicial").ID("Fecha_Inicial")
+                //.OnValueChanged(@<text>function(e){OnCambioFecha(e, "Fecha_Final")}</text>)
+                ).IsRequired(false).ColSpan(1);
+
+                groupItems.AddSimpleFor(m => m.Fecha_Final).Editor(e => e.DateBox().Type(DateBoxType.Date).DisplayFormat("dd/MM/yyyy")
+                .Name("Fecha_Final").ID("Fecha_Final")
+                .DateOutOfRangeMessage("Fecha de Final debe ser mayor a la fecha Inicial"))
+                .IsRequired(false).ColSpan(1);
+            }).ColCountByScreen(cs => cs.Md(2).Lg(2).Sm(1)).ColCount(2).ColSpan(1);
+        })
+        )
+    </div>
+    <div class="dx-field-value col-lg-12" style="margin-top:10px">
+        @(Html.DevExtreme().Button()
+        .Text("Cerrar")
+        .ID("btnCerrar")
+        .Type(ButtonType.Normal)
+        .Width(90)
+        //.OnClick(@<text>(e) =>CerrarPopup("PopEnviarNotificarInforme")</text>)
+        )
+        @(Html.DevExtreme().Button()
+        .Text("Guardar")
+        .ID("btnGuardar")
+        .Icon("save")
+        .Type(ButtonType.Normal)
+        .Width(90)
+        //.OnClick("SolicitudEvidencia")
+        )
+    </div>
+</div>

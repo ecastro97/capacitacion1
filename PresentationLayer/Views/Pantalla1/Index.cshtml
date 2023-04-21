@@ -1,0 +1,58 @@
+﻿
+@using DataAccessLayer.Util;
+@{
+    ViewBag.Title = "Pantalla1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<nav aria-label="breadcrumb" class="menu">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Pantalla 1</li>
+        <li class="breadcrumb-item" id="classManual" style="float:right;">
+            <a style="text-align: right;" title="Manual de Usuario" href="#" target="_blank">
+                <i class="fa fa-book" style="padding-left: inherit;padding-right: inherit;"></i>
+                Manual Usuario
+            </a>
+        </li>
+    </ol>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" style="padding:5px;">
+            @Html.Partial("~/Views/Pantalla1/_Grid.cshtml")
+        </div>
+    </div>
+</div>
+
+@Html.Partial("~/Views/Pantalla1/_Popup.cshtml")
+
+
+<script>
+// Todas las funciones de los grids o formularios deben ir en esta sección.
+    function AbrirPopupAgregar() {
+        MostrarPanelLoad();
+        $.ajax({
+            url: '@Url.Action("FormAgregar", "Pantalla1")',
+            type: 'POST',
+            success: function (response)
+            {
+                AbrirPopup("#Popup1", "Un titulo", "#ContPopup1", response);                
+                OcultarPanelLoad();
+            },
+            error: function (error) {
+                OcultarPanelLoad();
+                Alert(error.responseText, "error");
+            }
+        });        
+    }
+
+    function AbrirPopup(idDxPopup, title, container, content) {
+        if (title) $(idDxPopup).dxPopup("instance").option("title", title);
+
+        $(idDxPopup).dxPopup("instance").show();
+
+        if (container && content) $(container).html(content);
+    }
+
+</script>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d151a099b63d4321a85524c10b53df21" Name="Diagram1">
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Hallazgo_Informe_Auditoria" Width="1.5" PointX="15" PointY="129.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Informe_Auditoria" Width="1.5" PointX="16.5" PointY="150.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Observacion_Informe_Auditoria" Width="1.5" PointX="24.75" PointY="126.625" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Recomendacion_Informe_Auditoria" Width="1.5" PointX="22.25" PointY="134.625" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Auditoria_Informe_Auditoria" Width="1.5" PointX="27.75" PointY="125.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Clase_Entidad_Auditora" Width="1.5" PointX="12" PointY="164.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Clasificacion_Entidad" Width="1.5" PointX="12" PointY="96.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Dias_Feriados" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Enlaces" Width="1.5" PointX="12" PointY="175.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Entidad" Width="1.5" PointX="14.25" PointY="142.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Entidad_Auditora" Width="1.5" PointX="16.5" PointY="138" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Estado_Proceso" Width="1.5" PointX="12" PointY="135.625" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Estado_Recomendacion" Width="1.5" PointX="12" PointY="144.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Estado_Usuario_Externo" Width="1.5" PointX="7.5" PointY="122.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Fuente_Financiera" Width="1.5" PointX="12" PointY="195.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Geografico" Width="1.5" PointX="12" PointY="131.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Nivel_Organizacional" Width="1.5" PointX="12" PointY="168.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Organigrama" Width="1.5" PointX="17.25" PointY="144" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Prioridad_Recomendacion" Width="1.5" PointX="12" PointY="92.875" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Sector" Width="1.5" PointX="14.25" PointY="152.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Asignacion_Entidad" Width="1.5" PointX="12" PointY="191.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Auditoria" Width="1.5" PointX="12" PointY="107.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Informe_Seguimiento" Width="1.5" PointX="12" PointY="141" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Notificacion" Width="1.5" PointX="12" PointY="179.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Tipo_Recomendacion" Width="1.5" PointX="12" PointY="184" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.C__EFMigrationsHistory" Width="1.5" PointX="7.75" PointY="8.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.sysdiagrams" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.EmailRequests" Width="1.5" PointX="5.75" PointY="1" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.EmailTemplates" Width="1.5" PointX="5" PointY="6" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.EmailTemplatesTypes" Width="1.5" PointX="2.75" PointY="6.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.ErrorLogs" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Recipients" Width="1.5" PointX="8" PointY="1" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Bitacora_Errores" Width="1.5" PointX="12" PointY="104.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Parametros" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Portlet" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Notificacion" Width="1.5" PointX="33" PointY="149" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Auditoria" Width="1.5" PointX="12" PointY="100.625" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Bitacora_Eventos" Width="1.5" PointX="12" PointY="187.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Codigo_Verificacion_Usuario" Width="1.5" PointX="12" PointY="171.875" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Control" Width="1.5" PointX="3" PointY="125.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Control_Contexto" Width="1.5" PointX="5.25" PointY="124.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Controlador_Accion" Width="1.5" PointX="5.25" PointY="127.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Grupo" Width="1.5" PointX="15" PointY="121.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Grupo_Evento" Width="1.5" PointX="17.25" PointY="122.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Historico_Estado_Usuario_Externo" Width="1.5" PointX="15" PointY="126.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Menu" Width="1.5" PointX="7.5" PointY="125.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Enrolamiento" Width="1.5" PointX="19.5" PointY="131.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Enrolamiento_Detalle" Width="1.5" PointX="26.75" PointY="119.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Usuario" Width="1.5" PointX="9.75" PointY="113.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Usuario_Entidad" Width="1.5" PointX="19.5" PointY="126.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Usuario_Grupo" Width="1.5" PointX="20.25" PointY="121.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Usuario_Organigrama" Width="1.5" PointX="24.5" PointY="122.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Ventana" Width="1.5" PointX="0.75" PointY="125.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Actividad" Width="1.5" PointX="22.25" PointY="126.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Asignacion_Supervisor_Informe" Width="1.5" PointX="24.75" PointY="143.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Enlace_Evidencia_Recomendacion" Width="1.5" PointX="30" PointY="135.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Entrevista_Informe_Seguimiento" Width="1.5" PointX="33" PointY="121.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Evidencia_Seguimiento" Width="1.5" PointX="21.75" PointY="142.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Informe_Seguimiento" Width="1.5" PointX="27.75" PointY="136.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Observacion_Informe_Seguimiento" Width="1.5" PointX="36" PointY="129.875" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Plan_Accion" Width="1.5" PointX="24.75" PointY="136.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Presentacion_Evidencia" Width="1.5" PointX="36" PointY="143.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Presentacion_Evidencia_Recomendacion" Width="1.5" PointX="30" PointY="146.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Recomendacion_Plan_Accion" Width="1.5" PointX="33" PointY="130.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Seguimiento_Recomendacion" Width="1.5" PointX="33" PointY="138" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Adenda_Plan_Accion" Width="1.5" PointX="36" PointY="134.875" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Adenda_Plan_Accion_Actividad" Width="1.5" PointX="30" PointY="128.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Adenda_Plan_Accion_Recomendacion" Width="1.5" PointX="30" PointY="122.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Evidencia" Width="1.5" PointX="30" PointY="151.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Evidencia_Recomendacion" Width="1.5" PointX="33" PointY="144.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Solicitud_Prorroga" Width="1.5" PointX="27.75" PointY="129.375" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Alerta" Width="1.5" PointX="24.75" PointY="131.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Configuracion_Alerta" Width="1.5" PointX="14.25" PointY="180" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Evento" Width="1.5" PointX="15" PointY="115.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Mensaje_Aplicativo" Width="1.5" PointX="12" PointY="126" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Mensaje_Correo" Width="1.5" PointX="12" PointY="122.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Flujo_Estado_Informe_Auditoria" Width="1.5" PointX="18.75" PointY="138.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Portlet_Definicion" Width="1.5" PointX="3" PointY="1.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Grupo_Bandeja" Width="1.5" PointX="17.25" PointY="129.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Organigrama_Entidad_Relacion" Width="1.5" PointX="19.5" PointY="144.25" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Flujo_Estado_Informe_Seguimiento" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Flujo_Estado_Plan_Accion" Width="1.5" PointX="33" PointY="126.5" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Presentacion_Plan_Accion" Width="1.5" PointX="27.75" PointY="145.125" />
+        <EntityTypeShape EntityType="tsc_his_db_dev_entities.Despacho_Correo_Alertas" Width="1.5" PointX="9.75" PointY="7.75" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Actividad_Hallazgo_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Hallazgo_Informe_Auditoria_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Hallazgo_Informe_Auditoria_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Hallazgo_Informe_Auditoria_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Hallazgo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Plan_Accion_Hallazgo_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Hallazgo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Hallazgo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Alerta_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Asignacion_Supervisor_Informe_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Seguimiento_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Flujo_Estado_Informe_Auditoria_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Entidad_Auditora" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Fuente_Financiera" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Geografico" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Organigrama" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Usuario_Auditor" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Usuario_Supervidor_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Auditoria_Usuario_Supervisor" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Seguimiento_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Notificacion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Auditoria_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Plan_Accion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Recomendacion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Plan_Accion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Recomendacion_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Prorroga_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Auditoria_Informe_Auditoria_Informe_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Auditoria_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Auditoria_Usuario_Elaborador" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Auditoria_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Actividad_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Recomendacion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Estado_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Prioridad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Tipo_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Informe_Auditoria_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Plan_Accion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Recomendacion_Recomendacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Auditoria_Informe_Auditoria_Tipo_Auditoria" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Clase_Entidad_Auditora_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Clase_Entidad_Auditora_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Auditora_Clase_Entidad_Auditora" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Clasificacion_Entidad_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Clasificacion_Entidad_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Clasificacion_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Enlaces_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Enlaces_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Auditora_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Geografico" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Organigrama" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Sector" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Tipo_Asignacion_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Entidad_Relacion_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Entidad_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Auditora_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entidad_Auditora_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Estado_Proceso_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Estado_Proceso_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Plan_Accion_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Prorroga_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Estado_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Estado_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Estado" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Historico_Estado_Usuario_Externo_Estado_Usuario_Externo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Estado_Usuario_Externo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Fuente_Financiera_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Fuente_Financiera_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Geografico_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Geografico_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Nivel_Organizacional_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Nivel_Organizacional_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Nivel_Organizacional" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Entidad_Relacion_Organigrama_Pricipal" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Entidad_Relacion_Organigrama_Secundario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Usuario_Jefe" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Organigrama_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Organigrama_Organigrama" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Prioridad_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Prioridad_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Sector_Asignacion_Entidad" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Sector_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Sector_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Asignacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Asignacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Auditoria_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Auditoria_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Informe_Seguimiento_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Informe_Seguimiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Configuracion_Alerta_Tipo_Notificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Notificacion_Tipo_Notificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Tipo_Notificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Notificacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Notificacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Tipo_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recipients_EmailRequests_Email_Request_Id" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_EmailTemplates_EmailTemplatesTypes_Template_Type_Id" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Bitacora_Errores_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Portlet_Definicion_Portlet" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Notificacion_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Notificacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Notificacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Auditoria_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Bitacora_Eventos_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Codigo_Verificacion_Usuario_Codigo_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Control_Contexto_Control" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Control_Ventana" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Menu_Controlador_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Grupo_Bandeja_Grupo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Grupo_Evento_Grupo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Grupo_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Grupo_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Detalle_Codigo_Rol_General" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Grupo_Grupo" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Grupo_Evento_Evento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Historico_Estado_Usuario_Externo_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Menu_Ventana" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Detalle_Solicitud" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Enrolamiento_Detalle_Codigo_Usuario_General" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Codigo_Solicitud_Enrolamiento_Detalle" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Actividad_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Actividad_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Alerta_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Asignacion_Supervisor_Informe_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Asignacion_Supervisor_Informe_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Asignacion_Supervisor_Informe_Usuario_Supervidor" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entrevista_Informe_Seguimiento_Usuario_" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entrevista_Informe_Seguimiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Seguimiento_Usuario_Carga" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Seguimiento_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Seguimiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Flujo_Estado_Informe_Auditoria_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Flujo_Estado_Plan_Accion_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Seguimiento_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Seguimiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Informe_Seguimiento_Usuario_Supervisor" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Mensaje_Aplicativo_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Mensaje_Correo_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Seguimiento_Usuario_Creador" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Seguimiento_Usuario_Elaborador" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Seguimiento_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Plan_Accion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Plan_Accion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Usuario_Aprueba" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Plan_Accion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Plan_Accion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Plan_Accion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Plan_Accion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Usuario_Aprueba" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Usuario_Aprueba" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Prorroga_Usuario_Aprueba" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Prorroga_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Prorroga_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Entidad_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Entidad_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Entidad_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Grupo_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Grupo_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Grupo_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Organigrama_Usuario" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Organigrama_Usuario_Creacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Usuario_Organigrama_Usuario_Modificacion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Actividad_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Asignacion_Supervisor_Informe_Asignacion_Supervisor_Informe" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Evidencia" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Recomendacion_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Entrevista_Informe_Seguimiento_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Evidencia_Seguimiento_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Alerta_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Observacion_Informe_Seguimiento_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Recomendacion_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Seguimiento_Recomendacion_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Recomendacion_Informe_Seguimiento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Flujo_Estado_Plan_Accion_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Recomendacion_Plan_Accion_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Presentacion_Evidencia_Recomendacion_Presentacion_Evidencia" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Actividad_Solicitud_Adenda_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Adenda_Plan_Accion_Recomendacion_Solicitud_Adenda_Plan_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Solicitud_Evidencia_Recomendacion_Solicitud_Evidencia" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Alerta_Evento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Configuracion_Alerta_Evento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Mensaje_Aplicativo_Evento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.FK_Mensaje_Correo_Evento" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.Control_Controlador_Accion" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.Grupo_Control" />
+        <AssociationConnector Association="tsc_his_db_dev_entities.Menu_Favorito" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
